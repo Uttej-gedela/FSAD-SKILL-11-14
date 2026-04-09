@@ -1,20 +1,12 @@
-[
-  {
-    "id": 1,
-    "name": "Rahul Sharma",
-    "email": "rahul@gmail.com",
-    "phone": "9876543210"
-  },
-  {
-    "id": 2,
-    "name": "Anjali Verma",
-    "email": "anjali@gmail.com",
-    "phone": "9123456780"
-  },
-  {
-    "id": 3,
-    "name": "Kiran Kumar",
-    "email": "kiran@gmail.com",
-    "phone": "9988776655"
-  }
-]
+package com.klu.service;
+
+import java.util.List;
+
+import com.klu.entity.Student;
+
+public interface StudentService {
+    Student saveStudent(Student student);
+    List<Student> getAllStudents();
+    Student updateStudent(Long id, Student student);
+    void deleteStudent(Long id);
+}
